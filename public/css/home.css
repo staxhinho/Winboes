@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #0078d7;
+    --primary-color-svg: invert(34%) sepia(83%) saturate(3905%) hue-rotate(188deg) brightness(92%) contrast(112%);
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#desktop {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#wallaper {
+    width: 100%;
+    height: 100%;
+}
+
+#taskbar {
+    height: 35px;
+    width: 100vw;
+    background-color: #030303;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+#win-icon {
+    margin-left: 10px;
+}
+
+#win-icon:hover {
+    filter: var(--primary-color-svg);
+}
+
+.icon {
+    height: 20px;
+}
+
+.center-icon {
+    height: 23px;
+}
+
+#left-bar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+#center-bar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+#right-bar {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+#right-bar span {
+    margin: 0;
+    color: #eee;
+}

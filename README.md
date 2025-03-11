@@ -4,6 +4,8 @@ Winboes is a windows copy made in electron with vanilla.
 
 ## Development
 
+![Alt](https://repobeats.axiom.co/api/embed/53c7da26f2cf8606246334995a41296b78b6198d.svg "Repobeats analytics image")
+
 <details>
   <summary><h2>⚙️ Running locally for development</h2></summary>
 
