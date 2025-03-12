@@ -1,4 +1,4 @@
-const clock = document.getElementById('clock');
+const clock = document.querySelector('#clock p');
 
 const relogio = setInterval(function time(){
     let dateToday = new Date();
@@ -11,6 +11,4 @@ const relogio = setInterval(function time(){
     if(s<10) s = '0' + s;
 
     clock.textContent = `${hr}:${min}:${s}`;
-    clock.style.color = `#eee`;
-    clock.style.fontStyle = `Roboto`;
 });
