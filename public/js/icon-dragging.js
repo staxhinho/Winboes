@@ -38,30 +38,3 @@ desktopGrid.addEventListener('drop', (e) => {
         draggedItem.style.top = `${gridY}px`;
     }
 });
-
-// Storage
-window.addEventListener('beforeunload', () => {
-    let positions = [];
-    icons.forEach(icon => {
-        positions.push({
-            id: icon.alt,
-            left: icon.style.left,
-            top: icon.style.top
-        });
-    });
-    localStorage.setItem('iconPositions', JSON.stringify(positions));
-});
-
-window.addEventListener('load', () => {
-    let savedPositions = JSON.parse(localStorage.getItem('iconPositions'));
-    if (savedPositions) {
-        savedPositions.forEach(pos => {
-            let icon = document.querySelector(`.desktop-icon[alt="${pos.id}"]`);
-            if (icon) {
-                icon.style.position = 'absolute';
-                icon.style.left = pos.left;
-                icon.style.top = pos.top;
-            }
-        });
-    }
-});
