@@ -1,9 +1,14 @@
 const { app, BrowserWindow, globalShortcut } = require("electron");
+const server = require("./api/load-json.js"); // Import the Express server
+
+const PORT = 3000;
+
+// Start Express server
+server.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
 
 let win;
 
 const createWindow = () => {
-
     win = new BrowserWindow({
         width: 800,
         height: 600,
@@ -19,16 +24,14 @@ const createWindow = () => {
 };
 
 const shortcuts = () => {
-    //Toggle Fullscreen
     globalShortcut.register("F11", () => {
         win.setFullScreen(!win.isFullScreen());
     });
 
-    //Open DevTools
     globalShortcut.register("F10", () => {
         win.webContents.openDevTools();
     });
-}
+};
 
 app.whenReady().then(() => {
     createWindow();
