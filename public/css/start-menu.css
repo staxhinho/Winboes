@@ -1,0 +1,31 @@
+#start-menu {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background-color: #1e1e1ee1;
+    width: 20vw;
+    height: 55vh;
+    min-width: 170px;
+    min-height: 100px;
+    left: 0px;
+}
+
+#start-menu {
+    display: none;
+    justify-content: left;
+}
+
+#left-icons {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+}
+
+#left-icons img {
+    height: 20px;
+    padding: 10px 12px 10px 12px;
+}
+
+#left-icons img:hover {
+    background-color: #383838;
+}

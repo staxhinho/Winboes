@@ -1,0 +1,43 @@
+#desktop {
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+#wallaper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+#desktop-icons {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 60px);
+    grid-template-rows: repeat(auto-fill, 60px);
+    gap: 12px;
+    width: 100vw;
+    height: 100vh;
+    margin: 5px;
+    align-content: start;
+    position: absolute;
+}
+
+.desktop-icon {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    z-index: 1;
+    padding: 5px;
+}
+
+.desktop-icon:hover {
+    background-color: #33333386;
+    border-radius: 5px;
+}
+
+.desktop-icon:active {
+    background-color: #8f8f8f5f;
+    border-radius: 5px;
+}
