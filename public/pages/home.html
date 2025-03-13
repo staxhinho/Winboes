@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/task-bar.css">
+    <link rel="stylesheet" href="../css/start-menu.css">
+    <link rel="stylesheet" href="../css/desktop.css">
+    <script src="../js/clock.js" defer></script>
+    <script src="../js/icon-dragging.js" defer></script>
+    <script src="../js/start-menu.js" defer></script>
+    <script src="../js/start-menu-icons.js" defer></script>
+    <script src="../js/change-wallpaper.js" defer></script>
     <title>Winboes</title>
 </head>
 <body>
-    
+    <div id="desktop">
+        <img id="wallpaper" src="../images/wallpapers/mars.jpg" alt="Wallpaper">
+        <div id="desktop-icons">
+            <img class="desktop-icon" src="../images/icons/apps/chrome.svg" alt="" draggable="true">
+            <img class="desktop-icon" src="../images/icons/apps/vscode.svg" alt="" draggable="true">
+            <img class="desktop-icon" src="../images/icons/apps/steam.svg" alt="" draggable="true">
+        </div>
+    </div>
+    <div id="start-menu">
+        <div id="left-icons">
+            <img id="power-button" src="../images/icons/system/power.svg" alt="" onclick="shutDown()">
+        </div>
+    </div>
+    <div id="taskbar">
+        <div id="left-bar">
+            <img id="win-icon" src="../images/icons/system/windows.svg" alt="Windows" onclick="openStartMenu()">
+            <div id="center-bar">
+                <img class="center-icon" src="../images/icons/apps/chrome.svg" alt="">
+                <img class="center-icon" src="../images/icons/apps/vscode.svg" alt="">
+                <img class="center-icon" src="../images/icons/apps/steam.svg" alt="">
+            </div>
+        </div>
+        <div id="right-bar">
+            <div id="clock">
+                <p>00 : 00 : 00</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #0078d7;
+    --primary-color-svg: invert(34%) sepia(83%) saturate(3905%) hue-rotate(188deg) brightness(92%) contrast(112%);
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,8 +1,17 @@
 # Winboes
 
-Winboes is a windows copy made in electron with vanilla.
+Winboes is a windows copy made in Electron with Vanilla and Node.js.
 
 ## Development
+
+![Alt](https://repobeats.axiom.co/api/embed/53c7da26f2cf8606246334995a41296b78b6198d.svg "Repobeats analytics image")
+
+<details>
+  <summary><h2>⌨️ Shortcuts</h2>
+  </summary>
+
+  **Left Arrow / Right Arrow** - Change Wallpaper
+</details>
 
 <details>
   <summary><h2>⚙️ Running locally for development</h2></summary>
