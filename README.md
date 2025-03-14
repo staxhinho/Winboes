@@ -4,7 +4,7 @@ Winboes is a windows copy made in Electron with Vanilla and Node.js.
 
 ## Development
 
-![Alt](https://repobeats.axiom.co/api/embed/53c7da26f2cf8606246334995a41296b78b6198d.svg "Repobeats analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/47cc554a1e0ac710982297b8e0d8414b1401ff0c.svg "Repobeats analytics image")
 
 <details>
   <summary><h2>⌨️ Shortcuts</h2>
